@@ -3,6 +3,7 @@
  **/
 
 #include <Uefi.h>
+#include <Library/UefiLib.h>
 
 /**
  * Entry point for the application
@@ -20,6 +21,6 @@ EntryPoint (
   IN EFI_SYSTEM_TABLE* SystemTable
   )
 {
-    SystemTable->ConOut->OutputString(SystemTable->ConOut, L"Hello World!!!\n");
-    return EFI_SUCCESS;
+  Print(L"Hello World!!!\n");
+  return EFI_SUCCESS;
 }

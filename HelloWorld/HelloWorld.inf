@@ -1,3 +1,4 @@
+# Variables defined to be used during the build process
 [Defines]
   INF_VERSION       = 1.25
   BASE_NAME         = HelloWorld
@@ -6,11 +7,15 @@
   VERSION_STRING    = 1.0
   ENTRY_POINT       = EntryPoint
 
+# Source code to be compiled
 [Sources]
   HelloWorld.c
 
+# Required packages
 [Packages]
-  MdePkg/MdePkg.dec
+  MdePkg/MdePkg.dec          # Contains Uefi and UefiLib
 
+# Required libraries
 [LibraryClasses]
-  UefiApplicationEntryPoint
+  UefiApplicationEntryPoint  # UEFI application entry point
+  UefiLib                    # UefiLib
