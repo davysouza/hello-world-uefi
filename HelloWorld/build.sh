@@ -5,7 +5,7 @@ trap "Exiting" INT
 # environment variables
 SRC_PATH=$HOME/src
 EDK_PATH=$SRC_PATH/edk2
-APP_PATH=$SRC_PATH/HelloWorld
+APP_PATH=$HOME/hello-world-uefi/HelloWorld
 PKG_OUTPUT_DIR=$APP_PATH/Build
 
 export GCC5_AARCH64_PREFIX=$SRC_PATH/toolchain/gcc-arm-8.2-2019.01-x86_64-aarch64-elf/bin/aarch64-elf-

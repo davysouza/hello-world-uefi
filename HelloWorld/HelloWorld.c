@@ -22,5 +22,11 @@ EntryPoint (
   )
 {
   Print(L"Hello World!!!\n");
+
+  // 10 secs waiting here just to be able of 
+  // checking the message before the system
+  // restarts
+  SystemTable->BootServices->Stall(10000000);
+
   return EFI_SUCCESS;
 }

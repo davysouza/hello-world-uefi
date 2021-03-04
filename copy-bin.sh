@@ -2,8 +2,7 @@
 set -e
 trap "Exiting" INT
 
-SRC_PATH=$HOME/src
-APP_PATH=$SRC_PATH/HelloWorld
+APP_PATH=$HOME/hello-world-uefi/HelloWorld
 
 # setup flash drive
 FLASH_DRIVE=/media/usb_flash
